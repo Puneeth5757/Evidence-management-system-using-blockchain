@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2018",        /* ECMAScript target version */
+    "lib": ["ES2018", "DOM"],  /* Library files for DOM and ES features */
+    "allowJs": true,           /* Allow JavaScript files in your project */
+    "jsx": "react",            /* Enable React JSX */
+    "outDir": "./dist",        /* Output directory for compiled files */
+    "declaration": true,       /* Generate corresponding '.d.ts' files */
+    "declarationDir": "./types" /* Separate directory for declaration files */
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "types"]  /* Exclude output directories from input */
+}

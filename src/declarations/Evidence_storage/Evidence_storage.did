@@ -1,0 +1,13 @@
+type Evidence = 
+ record {
+   area: text;
+   crimeType: text;
+   description: text;
+   details: text;
+   id: nat;
+ };
+service : {
+  addEvidence: (text, text, text, text) -> () oneway;
+  fetchEvidenceById: (nat) -> (opt Evidence) query;
+  readEvidences: () -> (vec Evidence) query;
+}

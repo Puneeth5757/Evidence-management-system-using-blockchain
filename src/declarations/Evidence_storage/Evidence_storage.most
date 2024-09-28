@@ -1,0 +1,14 @@
+// Version: 1.0.0
+type Evidence =
+  {
+    area : Text;
+    crimeType : Text;
+    description : Text;
+    details : Text;
+    id : Nat
+  };
+type List<T> = ?(T, List<T>);
+actor {
+  stable var currentId : Nat;
+  stable var evidences : ?(Evidence, List<Evidence>)
+};
